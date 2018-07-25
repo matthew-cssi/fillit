@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<title>Welcoem to FillIt!</title>
+
+<h1>Welcome to Fillit!</h1>
+
+<h1>Sign Up Now!</h1>
+<form action="/signup" method="post">
+  <label>Username</label>
+  <input name="username"><br>
+
+  <label>Password</label>
+  <input type="password" name="password"><br>
+
+  <label>Tier</label>
+  <select name="tier">
+    <option value="free">Free</option>
+    <option value="paid">Paid ($99/year)</option>
+    <option value="premium" selected>Premium ($999/year)</option>
+  </select>
+  <br>
+
+  <label>Age</label>
+  <input type="number" name="age" value="10"><br>
+
+  <input id="newsletter" name="newsletter" type="checkbox">
+  <label for="newsletter">Sign up for the newsletter?</label><br>
+
+  <h2>Which pokemons do you like?</h2>
+  <input name="pokemon" type="checkbox" value="Pikachu"> Pikachu
+  <input name="pokemon" type="checkbox" value="Charzard"> Charzard
+  <input name="pokemon" type="checkbox" value="Pip Plup"> Pip Plup
+
+  <button>Sign up</button>
+</form>

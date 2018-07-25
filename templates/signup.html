@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<title>FillIt Signup</title>
+
+Username: {{ username }}<br>
+Password: {{ password }}<br>
+Tier: {{ tier }}<br>
+
+{% if legal %}
+  You are legal.
+{% else %}
+  You are too young.
+{% endif %}
+
+<br>
+
+Newsletter: {{ newsletter }}<br>
+
+Pokemons:
+<ul>
+{% for pokemon in pokemons %}
+  <li>{{ pokemon }}</li>
+{% endfor %}
+</ul>
